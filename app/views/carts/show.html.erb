@@ -7,7 +7,7 @@
   <% if enhanced_cart.count == 0%>
     <div class="alert alert-danger" role="alert">
       <h3 style="margin-top: 0px">Cart empty!</h3>
-      <h4 style="margin-bottom: 0px">Please go <%= link_to 'home', :root %> to add items to your cart before checking out. </h4>
+      <h4 style="margin-bottom: 0px">Return to the <%= link_to 'home page', :root, style: 'color: #A94442; font-weight: 600' %> to add items to your cart before checking out. </h4>
     </div>  
 
   <% else %>
