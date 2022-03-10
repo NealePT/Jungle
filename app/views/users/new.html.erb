@@ -1,11 +1,42 @@
-<h1>Signup!</h1>
+<style>
+  .submit-form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 50%;
+    background: #F7F7F7;
+    padding: 25px 15px 15px 10px;
+    border:1px solid #E4E4E4; 
+  }
 
-<%= form_for :user, url: '/users' do |f| %>
+  form {
+    display: flex;
+    flex-direction: column;
+  }
 
-  Name: <%= f.text_field :name %>
-  Email: <%= f.text_field :email %>
-  Password: <%= f.password_field :password %>
-  Password Confirmation: <%= f.password_field :password_confirmation %>
-  <%= f.submit "Submit" %>
+  input {
+    margin-bottom: 10px
+  }
 
-<% end %>
+  .submitbutton {
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+
+  }
+</style>
+
+  <header class="page-header">
+    <h1>Register</h1>
+  </header>
+
+<div class="submit-form">
+  <%= form_for :user, url: '/users' do |f| %>
+
+    Name: <%= f.text_field :name %>
+    Email: <%= f.text_field :email %>
+    Password: <%= f.password_field :password %>
+    Confirm Password: <%= f.password_field :password_confirmation %>
+    <div class=submitbutton><%= f.submit "Submit" %></div>
+
+  <% end %>
+</div>
