@@ -17,5 +17,16 @@ RSpec.feature "Visitor navigates to product page from home page", type: :feature
     end
   end
 
-  
+  scenario "They click 'Add to Cart' button on a product" do
+    visit root_path
+
+    within ".product", match: :first do 
+      click_on "Add", :visible => false
+    end
+
+    # Uncomment to debug 
+    save_and_open_screenshot
+
+    expect(page).to have_content "My Cart (1)"
+  end
 end
