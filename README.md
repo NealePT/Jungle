@@ -4,6 +4,16 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 
 ## Final Product
 
+!["Main view of the homepage"](https://github.com/NealePT/Jungle/blob/master/docs/Jungle_main_view.png)
+*User can browse products and sort by category.*
+
+
+!["Cart view"](https://github.com/NealePT/Jungle/blob/master/docs/Jungle_cart_view.png)
+*View of a user's cart. Quantity can be edited, and price is totaled.*
+
+
+!["Admin view of all products"](https://github.com/NealePT/Jungle/blob/master/docs/Jungle_admin_view.png)
+*Admin view of product page. Items can be added, deleted, and edited here.*
 
 
 ## Additional Steps for Apple M1 Machines
